@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_teman"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.corporation.fallen.uts.MenuTeman">
+
+
+        <TextView
+            android:id="@+id/tv_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Nama : " />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_name_label"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+            android:hint="Masukan Nama"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_email_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:visibility="invisible"
+            android:textColor="#000"
+            android:layout_below="@+id/tv_name_label"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:text="Email : " />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_name_label"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+            android:layout_below="@id/et_name"
+            android:hint="Masukan Email"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_nim_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:visibility="invisible"
+            android:textColor="#000"
+            android:layout_below="@+id/tv_email_label"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="20dp"
+            android:text="NIM : " />
+
+        <EditText
+            android:id="@+id/et_nim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_email_label"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+            android:layout_below="@id/et_email"
+            android:hint="Masukan NIM"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_kelas_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:visibility="invisible"
+            android:textColor="#000"
+            android:layout_below="@+id/tv_nim_label"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="20dp"
+            android:text="Kelas : " />
+
+        <EditText
+            android:id="@+id/et_kelas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_nim_label"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+            android:layout_below="@id/et_nim"
+            android:hint="Masukan Kelas"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_telepon_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:visibility="invisible"
+            android:textColor="#000"
+            android:layout_below="@+id/tv_kelas_label"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="20dp"
+            android:text="No Telepon : " />
+
+        <EditText
+            android:id="@+id/et_telepon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_kelas_label"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+            android:layout_below="@id/et_kelas"
+            android:hint="Masukan No Telepon"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_sosmed_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:visibility="invisible"
+            android:textColor="#000"
+            android:layout_below="@+id/tv_telepon_label"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="20dp"
+            android:text="Sosial Media : " />
+
+        <EditText
+            android:id="@+id/et_sosmed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_telepon_label"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+            android:layout_below="@id/et_telepon"
+            android:hint="Masukan Akun Sosial Media"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_email_label"
+            android:id="@+id/layout_btn"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tambah"
+                android:layout_gravity="center_horizontal"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/layout_btn"
+            android:scrollbars="vertical"/>
+    </RelativeLayout>
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/navigation_menu"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        android:id="@+id/nv">
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
